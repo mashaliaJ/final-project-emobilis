@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AgriLink - Products</title>
+    <link rel="stylesheet" href="/static/css/products.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">AgriLink</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="/products">Products</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- PAGE TITLE -->
+    <header class="page-header">
+        <h1>Our Products</h1>
+        <p>Fresh agricultural produce directly from trusted farmers.</p>
+    </header>
+
+    <!-- PRODUCTS GRID -->
+    <section class="product-grid">
+
+        <!-- CARD SAMPLE (You can repeat or later render using Django) -->
+        <div class="product-card">
+            <img src="/static/images/tomatoes.jpg" alt="Tomatoes">
+            <h3>Fresh Tomatoes</h3>
+            <p class="price">KSh 120 / kg</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="/static/images/cabbage.jpg" alt="Cabbage">
+            <h3>Cabbage</h3>
+            <p class="price">KSh 80 each</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="/static/images/maize.jpg" alt="Maize">
+            <h3>Dry Maize</h3>
+            <p class="price">KSh 150 / kg</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="/static/images/potatoes.jpg" alt="Potatoes">
+            <h3>Irish Potatoes</h3>
+            <p class="price">KSh 90 / kg</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 AgriLink. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

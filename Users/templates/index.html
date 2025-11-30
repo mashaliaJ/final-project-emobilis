@@ -1,0 +1,210 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AgriLink - Home</title>
+
+    <!-- FONT AWESOME & BOOTSTRAP ICONS -->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="logo">AgriLink</div>
+            <ul class="nav-links">
+                <li><a href="/">HOME</a></li>
+                <li><a href="#">COLLECTION</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search products...">
+                </div>
+                <i class="bi bi-person-circle nav-icon"></i>
+                <i class="bi bi-cart nav-icon"></i>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Latest Arrivals</h1>
+                <p>Explore our latest collection of fresh products and shop the best quality items directly from our farm to your doorstep.</p>
+                <button class="btn">SHOP NOW</button>
+            </div>
+        </section>
+
+        <!-- Latest Collection -->
+<section class="product-section">
+    <h2>Latest Collection</h2>
+    <div class="product-grid">
+        {% for p in latest %}
+        <div class="product-card">
+            {% if p.image %}
+                <img src="{% static 'products/'|add:p.image %}" alt="{{ p.name }}">
+            {% else %}
+                <img src="{% static 'images/default-product.png' %}" alt="No image">
+            {% endif %}
+            <h3>{{ p.name }}</h3>
+            <p class="price">Ksh {{ p.price }}</p>
+            <button class="cart-btn" data-id="{{ p.id }}">Add to Cart</button>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Best Sellers -->
+<section class="product-section">
+    <h2>Best Sellers</h2>
+    <div class="product-grid">
+        {% for p in best_sellers %}
+        <div class="product-card">
+            {% if p.image %}
+                <img src="{% static 'products/'|add:p.image %}" alt="{{ p.name }}">
+            {% else %}
+                <img src="{% static 'images/default-product.png' %}" alt="No image">
+            {% endif %}
+            <h3>{{ p.name }}</h3>
+            <p class="price">Ksh {{ p.price }}</p>
+            <button class="cart-btn" data-id="{{ p.id }}">Add to Cart</button>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+        <!-- FEATURES + QUALITY POLICY + NEWSLETTER -->
+        <section class="shop-highlights">
+
+            <!-- FEATURES -->
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Fresh From Farmers</h3>
+                    <p>Get naturally grown farm products straight from verified farmers.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Fair Prices</h3>
+                    <p>No middlemen. Farmers earn better, buyers pay less.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Fast Delivery</h3>
+                    <p>Efficient delivery across Kenya.</p>
+                </div>
+            </div>
+
+            <!-- QUALITY POLICY -->
+            <div class="quality-policy">
+                <h2>Why Shop With Us</h2>
+                <p>We prioritize quality, convenience, and customer satisfaction.</p>
+
+                <div class="policy-cards">
+                    <div class="policy-card">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <h3>Freshness Guaranteed</h3>
+                        <p>All products come straight from verified farmers to your doorstep.</p>
+                    </div>
+                    <div class="policy-card">
+                        <i class="bi bi-arrow-repeat"></i>
+                        <h3>Easy Exchange Policy</h3>
+                        <p>Hassle-free exchanges on all products</p>
+                    </div>
+                    <div class="policy-card">
+                        <i class="bi bi-tree"></i>
+                        <h3>Sustainable Practices</h3>
+                        <p>We ensure ethical farming and sustainable sourcing practices.</p>
+                    </div>
+                    <div class="policy-card">
+                        <i class="bi bi-calendar2-check"></i>
+                        <h3>7 Days Return Policy</h3>
+                        <p>Return products within 7 days</p>
+                    </div>
+                    <div class="policy-card">
+                        <i class="bi bi-shield-fill-check"></i>
+                        <h3>Quality Control</h3>
+                        <p>Every product goes through strict quality checks before delivery.</p>
+                    </div>
+                    <div class="policy-card">
+                        <i class="bi bi-headset"></i>
+                        <h3>24/7 Customer Support</h3>
+                        <p>We're here to help anytime</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEWSLETTER -->
+            <div class="newsletter">
+                <h2>Subscribe now & get 20% off</h2>
+                <p>Don’t miss out! Get updates on new products, tips for healthy living, and exclusive deals.</p>
+
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <section class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 footer-about">
+                        <h2 class="footer-logo">AgriLink</h2>
+                        <p>
+                        Connecting you to fresh, quality agricultural products. Shop easily, 
+                        track your orders, and enjoy reliable delivery straight to your doorstep.
+                        </p>
+                    </div>
+                    <div class="col-md-4 footer-links">
+                        <h3>COMPANY</h3>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Get in Touch</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 footer-contact">
+                        <h3>GET IN TOUCH</h3>
+                        <p><i class="bi bi-telephone-fill"></i> +254 785 739 093</p>
+                        <p><i class="bi bi-envelope-fill"></i> AgriLink@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 AgriLink. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Simple front-end add-to-cart demo (no backend persistence)
+        document.addEventListener('click', function(e){
+          if (e.target.matches('.cart-btn')) {
+            const id = e.target.dataset.id;
+            let cart = JSON.parse(localStorage.getItem('agricart') || '[]');
+            cart.push(id);
+            localStorage.setItem('agricart', JSON.stringify(cart));
+            e.target.textContent = 'Added';
+            e.target.disabled = true;
+          }
+        });
+    </script>
+
+</body>
+</html>
