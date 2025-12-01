@@ -1,0 +1,36 @@
+id,name,image,price,description,category,type,bestseller
+1,Organic Tomatoes,image1.jpeg,15.99,Fresh organic tomatoes grown locally.,Vegetables,Organic,true
+2,Red Apples,image2.jpeg,41.50,Crisp and juicy red apples.,Fruits,Conventional,true
+3,Organic Spinach,image3.jpeg,35.99,Fresh pesticide-free spinach.,Vegetables,Organic,true
+4,Maize Seeds,image4.jpeg,500.50,High-yield maize seeds for your farm.,Grains,Conventional,false
+5,Wheat Seeds,image5.jpeg,450.50,High-quality wheat seeds for your farm.,Grains,Conventional,false
+6,Carrots,image6.jpeg,52.25,Sweet and crunchy carrots.,Vegetables,Conventional,true
+7,Bananas,image7.jpeg,39.75,Fresh yellow bananas rich in potassium.,Fruits,Conventional,true
+8,Organic Lettuce,image8.jpeg,65.50,Crisp organic lettuce for salads.,Vegetables,Organic,false
+9,Soybeans,image9.jpeg,190.00,High-protein soybeans.,Grains,Conventional,false
+10,Organic Fertilizer,image10.jpeg,2000.00,Eco-friendly organic fertilizer.,Fertilizers,Organic,false
+11,Potatoes,image11.jpeg,400.50,Fresh and versatile potatoes.,Vegetables,Conventional,true
+12,Strawberries,image12.jpeg,70.99,Sweet and juicy strawberries.,Fruits,Organic,true
+13,Corn Seeds,image13.jpeg,640.50,Premium corn seeds for high yield.,Seeds,Conventional,false
+14,Organic Kale,image14.jpeg,34.75,Leafy and nutritious kale.,Vegetables,Organic,false
+15,Green Apples,image15.jpeg,44.25,Crisp green apples.,Fruits,Conventional,true
+16,Barley,image16.jpeg,880.00,Quality barley grains.,Grains,Conventional,false
+17,Organic Cabbage,image17.jpeg,54.25,Fresh organic cabbage.,Vegetables,Organic,false
+18,Oranges,image18.jpeg,35.50,Juicy and sweet oranges.,Fruits,Conventional,true
+19,Rice Seeds,image19.jpeg,190.50,High-quality rice seeds.,Seeds,Conventional,false
+20,Tomato Seeds,image20.jpeg,800.00,Seeds for growing tomatoes.,Seeds,Organic,false
+21,Cucumber,image21.jpeg,54.50,Fresh crunchy cucumbers.,Vegetables,Conventional,true
+22,Pineapple,image22.jpeg,110.50,Sweet tropical pineapples.,Fruits,Conventional,true
+23,Organic Broccoli,image23.jpeg,85.25,Fresh organic broccoli.,Vegetables,Organic,false
+24,Millet,image24.jpeg,400.50,Nutritious millet grains.,Grains,Conventional,false
+25,Spinach Seeds,image25.jpeg,130.50,High-quality spinach seeds.,Seeds,Conventional,false
+26,Organic Carrots,image26.jpeg,95.75,Organic fresh carrots.,Vegetables,Organic,true
+27,Mangoes,image27.jpeg,60.99,Sweet ripe mangoes.,Fruits,Conventional,true
+28,Organic Wheat,image28.jpeg,1000.50,Organic wheat grains.,Grains,Organic,false
+29,Fertilizer Pack,image29.jpeg,2500.00,General-purpose fertilizer.,Fertilizers,Conventional,false
+30,Red Cabbage,image30.jpeg,180.99,Fresh red cabbage.,Vegetables,Conventional,false
+31,Organic Bell Pepper,image31.jpeg,52.50,Fresh organic bell peppers.,Vegetables,Organic,true
+32,Grapes,image32.jpeg,120.75,Sweet seedless grapes.,Fruits,Conventional,true
+33,Organic Corn,image33.jpeg,65.50,Fresh organic corn cobs.,Vegetables,Organic,false
+34,Oats,image34.jpeg,240.25,High-quality oats.,Grains,Conventional,false
+35,Chili Seeds,image35.jpeg,300.00,Premium chili seeds.,Seeds,Conventional,false
